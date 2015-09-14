@@ -1,0 +1,29 @@
+{
+  "clusterName": {
+    "value": "sampleclusterlinuxinazure"
+  },
+  "location": {
+    "value": "westus"
+  },
+  "clusterNodeCount": {
+    "value": 1
+  },
+  "clusterVmSize": {
+    "value": "Standard_D1"
+  },
+  "adminUsername": {
+    "value": "liveopensource"
+  },
+  "authenticationType": {
+    "value": "password"
+  },
+  "Password": {
+    "value":  "#opensourcefuns123#"
+  },
+  "sshKey": {
+    "value": "AAAAB3NzaC1yc2EAAAADAQABAAACAQCkOuwkCk5YAND+bp7F8zHCY/BrjjPc2APAhcvfH/EuVC3+zGNYqNEQPq8JBrbN5TUlermNh15m2mokhD6Vd+lAOYaHEDt6BWuWC90wIeIylOcydiZmLkSFoefFNAeas4C9UX3ybWWGHbUEJpkPomjeRgFQYWyL4HekzXwbvxcyAh7QMIiMizjXjphs5Rw7/irhfhNDMSkSh5sEw0oIgbX72TuWP4S15Vl5+fNuWepLojxJfK4t6tgltpL5O7PJpsvZafLyMAxPodylMavKHLVOV4+6zFPl2g5knq3E0SwxMG9LlmBRIhqLVbdAnQhjRlhvrcpI2rW/oylENOrLsR9W56mXQSNvdXHzANFpan+l2THwRu9saazRZyjbuylfE9I4btVFCKB3KF+QgS7Zp9Se0yjokx3hKAqF4ckKC4/zt1sK7fNfOAbrTT6RhAj4HCRJHpGmKrfNOwSob9WrfebhM4DAHpVDffrSwQUClrhQ/NgOw9mpsNANtu/Dxx2qvB3UpR2VM/CGeMCuuVnZL0pCvNkWZlr//XIG6V/cCGM7FD+5nE5tJisxpw4+o1XMPW1m5eGZFLAcz2cKX6LdxW9FFQOeRvwtfIFynyL8RP7jduu+w7wsBqMOtCI49qknOE/6AadLbi5c/UwwOiKdGqOXfwMt4OFUwFxa2CxOiSkYMQ"
+  },
+  "artifactsBaseUrl" : {
+    "value" : ".\""
+  }
+}
