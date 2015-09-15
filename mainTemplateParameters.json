@@ -1,6 +1,6 @@
 {
   "clusterName": {
-    "value": "sampleclusterlinuxinazure"
+    "value": "linuxcluster123"
   },
   "location": {
     "value": "westus"
@@ -15,15 +15,15 @@
     "value": "liveopensource"
   },
   "authenticationType": {
-    "value": "password"
+    "value": "sshPublickey"
   },
   "Password": {
     "value":  "#opensourcefuns123#"
   },
   "sshKey": {
-    "value": "AAAAB3NzaC1yc2EAAAADAQABAAACAQCkOuwkCk5YAND+bp7F8zHCY/BrjjPc2APAhcvfH/EuVC3+zGNYqNEQPq8JBrbN5TUlermNh15m2mokhD6Vd+lAOYaHEDt6BWuWC90wIeIylOcydiZmLkSFoefFNAeas4C9UX3ybWWGHbUEJpkPomjeRgFQYWyL4HekzXwbvxcyAh7QMIiMizjXjphs5Rw7/irhfhNDMSkSh5sEw0oIgbX72TuWP4S15Vl5+fNuWepLojxJfK4t6tgltpL5O7PJpsvZafLyMAxPodylMavKHLVOV4+6zFPl2g5knq3E0SwxMG9LlmBRIhqLVbdAnQhjRlhvrcpI2rW/oylENOrLsR9W56mXQSNvdXHzANFpan+l2THwRu9saazRZyjbuylfE9I4btVFCKB3KF+QgS7Zp9Se0yjokx3hKAqF4ckKC4/zt1sK7fNfOAbrTT6RhAj4HCRJHpGmKrfNOwSob9WrfebhM4DAHpVDffrSwQUClrhQ/NgOw9mpsNANtu/Dxx2qvB3UpR2VM/CGeMCuuVnZL0pCvNkWZlr//XIG6V/cCGM7FD+5nE5tJisxpw4+o1XMPW1m5eGZFLAcz2cKX6LdxW9FFQOeRvwtfIFynyL8RP7jduu+w7wsBqMOtCI49qknOE/6AadLbi5c/UwwOiKdGqOXfwMt4OFUwFxa2CxOiSkYMQ"
+    "value": "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQCxvNOUjskPoHAyi51dLth0sAJXJDteWFf+eEU2igkRsHZtXl6DRn0Otk1bIvH5s/bEHkS/2cF1UmbCYQXZLiyeuEJqPAhAkuUsQGONLVaBZOpjwTjlWRYcJ0I1MsDeP4nl/UgzV8iWOVWXc/qwkyl5NcHM+psYv4X16bjRDUcscLaEty6la3CzD/xCE/D7wxxLxqJGRiit6uqYzS8Q/A5B1cTheY3alGAwPdemCRHfla5i7dQuAeH938TeDoFxxJsEJZlaZfdDRbQ/FiUXjhVn1gdsrtG1knnP/osXpaH0dF52sUHxlmX7+C7onpLixWAqqz9BfAVE1Kc1EpkM597b harijay@HARIJAY-WORKLP"
   },
   "artifactsBaseUrl" : {
-    "value" : ".\""
+    "value" : "https://raw.githubusercontent.com/harijayms/azure-linux-sample-harijay/master/"
   }
 }

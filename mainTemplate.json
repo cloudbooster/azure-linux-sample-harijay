@@ -80,7 +80,7 @@
         "addressPrefix": "10.0.0.0/16",
         "subnet1Name": "Subnet-1",
         "subnet1Prefix": "10.0.0.0/24",
-        "publicIPAddressName": "SimpleLinuxVMIP",
+        "publicIPAddressName": "sshIP",
         "publicIPAddressType": "Dynamic",
         "vmStorageAccountContainerName": "vhds",
         "nicName": "sshNIC",
@@ -90,8 +90,8 @@
         "vnetID": "[resourceId('Microsoft.Network/virtualNetworks', variables('virtualNetworkName'))]",
         "subnet1Ref": "[concat(variables('vnetID'),'/subnets/',variables('subnet1Name'))]",
         "templateBaseUrl": "[concat(parameters('artifactsBaseUrl'),'/')]",
-        "clusterNodesTemplateUrl": "[concat(variables('templateBaseUrl'), 'simple-Linux-VM-',parameters('authenticationType'),'.json')]",
-        "newStorageAccountName": "[concat(parameters('clusterName'),'linux')]",
+        "clusterNodesTemplateUrl": "[concat(variables('templateBaseUrl'), 'Simple-Linux-VM-',parameters('authenticationType'),'.json')]",
+        "newStorageAccountName": "[concat(parameters('clusterName'),'009')]",
         "dnsNameForPublicIP": "parameters('clustername')"
     },
     "resources": [
@@ -110,10 +110,8 @@
             "name": "[variables('publicIPAddressName')]",
             "location": "[parameters('location')]",
             "properties": {
-                "publicIPAllocationMethod": "[variables('publicIPAddressType')]",
-                "dnsSettings": {
-                    "domainNameLabel": "[variables('dnsNameForPublicIP')]"
-                }
+                "publicIPAllocationMethod": "[variables('publicIPAddressType')]"
+                
             }
         },
         {
@@ -171,7 +169,7 @@
             "properties": {
                 "mode": "Incremental",
                 "templateLink": {
-                    "uri": "[variables('clusterNodesBaseTemplateUrl')]",
+                    "uri": "[variables('clusterNodesTemplateUrl')]",
                     "contentVersion": "1.0.0.0"
                 },
                 "parameters": {
@@ -192,6 +190,9 @@
                     },
                     "clusterVmSize": {
                         "value": "[parameters('clusterVmSize')]"
+                    },
+                    "clusterName": {
+                        "value": "[parameters('clusterName')]"
                     },
                     "password": {
                         "value": "[parameters('password')]"
