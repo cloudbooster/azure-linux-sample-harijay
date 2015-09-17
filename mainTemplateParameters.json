@@ -17,7 +17,7 @@
   "authenticationType": {
     "value": "sshPublickey"
   },
-  "Password": {
+  "password": {
     "value":  "#opensourcefuns123#"
   },
   "sshKey": {

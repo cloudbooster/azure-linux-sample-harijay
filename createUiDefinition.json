@@ -112,7 +112,7 @@
       "clusterVmSize": "[steps('SampleClusterConfig').clusterVmSize]",
       "location": "[location()]",
       "authenticationType":  "[basics('SSHCredntials').authenticationType]",
-      "Password": "[basics('SSHCredntials').password]",
+      "password": "[basics('SSHCredntials').password]",
       "sshKey": "[basics('SSHCredntials').sshPublicKey]"
     }
   }

@@ -59,9 +59,11 @@
         "artifactsBaseUrl": {
             "type": "string",
             "metadata": {
-                "description": "Base URL for artifacts"
-            }
+                "artifactsBaseUrl": "Base URL of the Publisher Template gallery package"
+            },
+            "defaultValue": ""
         },
+
         "ubuntuOSVersion": {
             "type": "string",
             "defaultValue": "14.04.2-LTS",
